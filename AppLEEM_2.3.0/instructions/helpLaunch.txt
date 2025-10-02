@@ -1,0 +1,11 @@
+Widgets:
+-'Terminal': Muestra el terminal, ocultando el indicador de modo y tiempo desde el despegue.
+-'Follow': Activa el autocentrado del mapa en la ubicación actual del cohete.
+-'3D': Cambia entre una gráfica 2D de altura respecto al tiempo, a una gráfica 3D que representa la altura segun las coordenadas.
+-'Legend': Muestra la leyenda de la gráfica 2D.
+
+Panel de control:
+-'Ignition': Inicia la ventana de lanzamiento.
+-'Parachute': Muestra el estado del paracaidas.
+-'Alarm': No activo ahora.
+-'Led': Nada actualmente.

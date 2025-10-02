@@ -1,0 +1,22 @@
+Pasos a seguir:
+1º: Rellenamos el metadata.
+2º: Tara la celula y el transductor.
+3º: En caso de no ensayar (es decir, no usar el transductor), desactivarlo, porque si esta la célula activada mas de 20 minutos puede crashear debido a la falta de espacio en la SD.
+4º: Una vez tarada iniciamos el ensayo.
+5º: Una vez terminado le damos a 'Stop'.
+6º: Calculamos el impulso y exportamos.
+
+Widgets:
+-'Terminal': Muestra el terminal.
+-'Temperatures': Muestra la gráfica de temperaturas.
+-'Pressure': Muestra la gráfica de presión.
+-'Legend': Muestra las leyendas de las gráficas.
+
+Panel de control:
+-'Tare': Tara la célula de carga.
+-'Start': Indica el inicio del ensayo y espera al impulso inicial del motor.
+-'Stop': Finaliza el ensayo.
+-'Get Data': Calcula el impulso total, empuje maximo, empuje medio y tiempo de quema del motor, y lo pone en el Metadata.
+-'Ignition': Inicia la ventana de lanzamiento.
+-'Enabled/Disabled transducer': Indica si el transductor esta activado o desactivado.
+        

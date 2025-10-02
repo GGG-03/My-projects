@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Terminal</class>
+ <widget class="QDialog" name="Terminal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Consolas</family>
+    <pointsize>11</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Terminal</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Terminal
+
+{
+	background-color: rgb(173,217,230);
+}</string>
+  </property>
+  <layout class="QGridLayout" name="mainLayout" rowstretch="1,4,0">
+   <property name="verticalSpacing">
+    <number>20</number>
+   </property>
+   <item row="1" column="0">
+    <widget class="QFrame" name="serial_frame">
+     <property name="styleSheet">
+      <string notr="true">#serial_frame
+{
+	border: 5px solid rgb(212,235,242);
+	background-color: white;
+	border-radius: 25px;
+} 
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QListView" name="serial_print">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame
+{
+	border: 0px;
+	background-color: white;
+} 
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QFrame" name="order_frame">
+     <property name="styleSheet">
+      <string notr="true">#order_frame
+{
+	border: 5px solid rgb(212,235,242);
+	background-color: white;
+	border-radius: 25px;
+} 
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QListView" name="order_print">
+        <property name="font">
+         <font>
+          <family>Consolas</family>
+          <pointsize>11</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+QFrame
+{
+	border: 0px;
+	background-color: white;
+} 
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

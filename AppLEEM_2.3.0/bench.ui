@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Bench</class>
+ <widget class="QWidget" name="Bench">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWIdget
+{
+	background-color:rgb(173,217,230)
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="mainLayout" stretch="1,1">
+     <property name="spacing">
+      <number>30</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SizeConstraint::SetDefaultConstraint</enum>
+     </property>
+     <item>
+      <layout class="QHBoxLayout" name="thrustpressureLayout">
+       <property name="spacing">
+        <number>30</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="thrustFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame
+{
+	border-radius: 30%;
+	border: 5px solid rgb(212,235,242);
+	background-color: white;
+	
+} 
+
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QCustomPlot" name="thrustGraph" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QCustomPlot
+{
+	border: 20px solid;
+	border-top-color:  qlineargradient(spread:reflect, x1:0, y1:0, x2:0, y2:0.7, stop:0.05 rgba(56, 83, 92, 216), stop:0.561111 rgba(129, 194, 214, 255), stop:0.861111 rgba(0, 0, 0, 255));
+	border-bottom-color:qlineargradient(spread:reflect, x1:0, y1:1, x2:0, y2:0.3, stop:0.05 rgba(56, 83, 92, 216), stop:0.561111 rgba(129, 194, 214, 255), stop:0.861111 rgba(0, 0, 0, 255)) ;
+	border-left-color: qlineargradient(spread:reflect, x1:0, y1:0, x2:0.7, y2:0, stop:0.05 rgba(56, 83, 92, 216), stop:0.561111 rgba(129, 194, 214, 255), stop:0.861111 rgba(0, 0, 0, 255)) ;
+	border-right-color:  qlineargradient(spread:reflect, x1:1, y1:0, x2:0.3, y2:0, stop:0.05 rgba(56, 83, 92, 216), stop:0.561111 rgba(129, 194, 214, 255), stop:0.861111 rgba(0, 0, 0, 255));
+	background-color: black;
+	color: white;
+} 
+
+
+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="pressureFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame
+{
+	border-radius: 25px;
+	border: 5px solid rgb(212,235,242);
+	background-color: white;
+	
+} 
+
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_5">
+          <item row="0" column="0">
+           <widget class="QCustomPlot" name="pressureGraph" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="controltempLayout">
+       <property name="spacing">
+        <number>30</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="controlLayout" stretch="1,4,0">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QFrame" name="orderFrame">
+           <property name="styleSheet">
+            <string notr="true">#orderFrame
+{
+	border-radius: 30px;
+	border: 5px solid rgb(212,235,242);
+	background-color: white;	
+} 
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="QListView" name="orderPrint">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Consolas</family>
+                <pointsize>11</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+QFrame
+{
+	background-color: white;	
+	border:0px;
+} 
+
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="serialFrame">
+           <property name="styleSheet">
+            <string notr="true">
+#serialFrame
+{
+	border-radius: 30px;
+	border: 5px solid rgb(212,235,242);
+	background-color: white;	
+} 
+
+</string>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Shape::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Shadow::Raised</enum>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_6">
+            <item row="0" column="0">
+             <widget class="QListView" name="serialPrint">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Consolas</family>
+                <pointsize>11</pointsize>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">
+
+QFrame
+{
+	background-color: white;	
+	border:0px;
+} 
+
+</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="buttonLayout">
+           <property name="spacing">
+            <number>20</number>
+           </property>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="transducerButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Consolas</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton 
+{
+	border-radius: 15px;
+	height: 30px;
+	background-color: white;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Transducer enabled</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="tareButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Consolas</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton 
+{
+	border-radius: 15px;
+	height: 30px;
+	background-color: white;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Tare</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="startButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Consolas</family>
+               <pointsize>12</pointsize>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton 
+{
+	border-radius: 15px;
+	height: 30px;
+	background-color: white;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Start</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="hydroStaticButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <family>Consolas</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton 
+{
+	border-radius: 15px;
+	height: 30px;
+	background-color: white;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Hydrostatic disabled</string>
+             </property>
+             <property name="checkable">
+              <bool>true</bool>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QFrame" name="tempFrame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame
+{
+	border-radius: 25px;
+	border: 5px solid rgb(212,235,242);
+	background-color: white;
+	
+} 
+
+
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::Shape::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Shadow::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <widget class="QCustomPlot" name="tempGraph" native="true"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header location="global">qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>teston()</slot>
+  <slot>ledon()</slot>
+  <slot>ledoff()</slot>
+  <slot>ignitionon()</slot>
+  <slot>ignitionoff()</slot>
+  <slot>paracason()</slot>
+  <slot>paracasoff()</slot>
+  <slot>alarmaon()</slot>
+  <slot>alarmaoff()</slot>
+  <slot>testoff()</slot>
+  <slot>exporttest()</slot>
+  <slot>exportgraph()</slot>
+  <slot>val1()</slot>
+  <slot>val2()</slot>
+  <slot>val3()</slot>
+  <slot>val4()</slot>
+  <slot>exportraw()</slot>
+  <slot>exportthrust()</slot>
+ </slots>
+</ui>

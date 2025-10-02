@@ -1,0 +1,21 @@
+General:
+1º En el menú selecciona 'Connect', elige tu placa y los baudios correspondientes.
+2º En 'Mode' selecciona el modo que quieras.
+3º Que no se te olvide elegir si testeas o ensayas.
+4º Ajusta el frame rate a tu gustp.
+5º En caso de querer ignitar desde la app, podras activar 'Ignition' desde cualquier ventana, tanto con botones como modo, siempre y cuando estes en modo ensayo, no testeo.
+6º En 'File' selecciona 'Edit Metadata' para destacar los aspectos del ensayo.
+7º En 'File' selecciona 'Export' para guardar los datos obtenidos en el ensayo, al igual que el metadata.
+8º Selecciona 'Reset' para reiniciar el ensayo.
+
+File:
+-'Export': Exporta todos los datos del ensayo, incluidos los datos bien ordenados, gráficas y el metadata. 
+-'Compare': Selecciona un archivo con el mismo formato que los datos para comparar curvas tanto de empuje como altitud.\n-'Edit Metadata': Para editar el metadata, que contiene informacion importante o descriptiva.
+-'Decodify': Decodifica el archivo extraido de la SD que tu selecciones. 
+
+Window:
+-'Frame rate': Cambia el frame rate
+-'Floating Terminal': El terminal de datos se aisla en otra ventana.
+-'Dual Screen': La aplicación se pone en 2 ventanas.
+-'Move Tab': Mueve las páginas de una ventana a otra.
+       

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>858</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LEEM UPM</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>models/LogoLEEM.png</normaloff>models/LogoLEEM.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow
+{
+	border-image: url(:/models/Fondo.png) 0 0 0 0 stretch stretch;
+}</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonIconOnly</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/models/Fondo.png) 0 0 0 0 stretch stretch;</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetNoConstraint</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QWidget
+{
+	background-color: transparent;
+} 
+
+QTabWidget::pane
+{
+	border: 1px;
+	background-color: transparent;
+	color: black;
+} 
+
+QTabBar::tab 
+{
+	background-color: rgb(134,199,218);
+	color: black;
+	width: 300px;
+} 
+
+QTabBar::tab:hover
+{
+	background-color: rgb(153,208,224); 
+	color: white;
+}    
+ 
+QTabBar::tab:selected
+{
+	background-color: transparent;
+	color: black;
+}
+</string>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::North</enum>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>858</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="palette">
+    <palette>
+     <active>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="PlaceholderText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="128">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </active>
+     <inactive>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="PlaceholderText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="128">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </inactive>
+     <disabled>
+      <colorrole role="WindowText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Button">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Text">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="ButtonText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Base">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="Window">
+       <brush brushstyle="SolidPattern">
+        <color alpha="255">
+         <red>134</red>
+         <green>199</green>
+         <blue>218</blue>
+        </color>
+       </brush>
+      </colorrole>
+      <colorrole role="PlaceholderText">
+       <brush brushstyle="SolidPattern">
+        <color alpha="128">
+         <red>0</red>
+         <green>0</green>
+         <blue>0</blue>
+        </color>
+       </brush>
+      </colorrole>
+     </disabled>
+    </palette>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <pointsize>12</pointsize>
+     <italic>true</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(134,199,218);
+</string>
+   </property>
+   <property name="defaultUp">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuTab">
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Window </string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(134,199,218);</string>
+    </property>
+    <property name="title">
+     <string> File </string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="actionCompare"/>
+    <addaction name="metadataEdit"/>
+    <addaction name="actionDecodifiy"/>
+   </widget>
+   <widget class="QMenu" name="menuApp">
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Mode </string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="benchWidgets">
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string> Widgets </string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="rocketWidgets">
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string> Widgets </string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuApp"/>
+   <addaction name="menuTab"/>
+   <addaction name="benchWidgets"/>
+   <addaction name="rocketWidgets"/>
+  </widget>
+  <action name="exportGraph">
+   <property name="text">
+    <string>Graph</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="exportRaw">
+   <property name="text">
+    <string>Raw</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+     <bold>false</bold>
+    </font>
+   </property>
+  </action>
+  <action name="exportThrust">
+   <property name="text">
+    <string>Thrust</string>
+   </property>
+  </action>
+  <action name="action1">
+   <property name="text">
+    <string>Orders</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="action2">
+   <property name="text">
+    <string>Test</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="monoScreen">
+   <property name="text">
+    <string>Mono Screen</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="dualScreen">
+   <property name="text">
+    <string>Dual Screen</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="exportingGraph">
+   <property name="text">
+    <string>Graph</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="exportingRaw">
+   <property name="text">
+    <string>Raw</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionajdslkfjdsl">
+   <property name="text">
+    <string>ajdslkfjdsl</string>
+   </property>
+  </action>
+  <action name="actionTelemetria">
+   <property name="text">
+    <string>Telemetria</string>
+   </property>
+  </action>
+  <action name="actionFrame">
+   <property name="text">
+    <string> Frame rate</string>
+   </property>
+  </action>
+  <action name="yesZoom">
+   <property name="text">
+    <string>Yes</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="noZoom">
+   <property name="text">
+    <string>No</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="yesTerminal">
+   <property name="text">
+    <string>Yes</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="noTerminal">
+   <property name="text">
+    <string>No</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionTesting">
+   <property name="text">
+    <string>  Testing </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionPerforming">
+   <property name="text">
+    <string>  Performing  </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+  <action name="testingSwitchAction">
+   <property name="text">
+    <string>  Testing</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionBench">
+   <property name="text">
+    <string>  Bench  </string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Consolas</family>
+    </font>
+   </property>
+  </action>
+  <action name="yesSerial">
+   <property name="text">
+    <string>Yes</string>
+   </property>
+  </action>
+  <action name="noSerial">
+   <property name="text">
+    <string>No</string>
+   </property>
+  </action>
+  <action name="yesPressure">
+   <property name="text">
+    <string>Yes</string>
+   </property>
+  </action>
+  <action name="noPressure">
+   <property name="text">
+    <string>No</string>
+   </property>
+  </action>
+  <action name="yesTemp">
+   <property name="text">
+    <string>Yes</string>
+   </property>
+  </action>
+  <action name="noTemp">
+   <property name="text">
+    <string>No</string>
+   </property>
+  </action>
+  <action name="actionCompare">
+   <property name="text">
+    <string>  Compare </string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>  Save</string>
+   </property>
+  </action>
+  <action name="metadataEdit">
+   <property name="text">
+    <string>  Edit metadata    </string>
+   </property>
+  </action>
+  <action name="actionLaunchpad">
+   <property name="text">
+    <string>  LaunchPad    </string>
+   </property>
+  </action>
+  <action name="showFloatTerminal">
+   <property name="text">
+    <string>Float Terminal</string>
+   </property>
+  </action>
+  <action name="actionIgnitors">
+   <property name="text">
+    <string>  Ignitors  </string>
+   </property>
+  </action>
+  <action name="actionIgnition">
+   <property name="text">
+    <string>  Ignition</string>
+   </property>
+  </action>
+  <action name="actionDecodifiy">
+   <property name="text">
+    <string>  Decodifiy </string>
+   </property>
+  </action>
+  <action name="moveTab">
+   <property name="text">
+    <string> Move Tab </string>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
