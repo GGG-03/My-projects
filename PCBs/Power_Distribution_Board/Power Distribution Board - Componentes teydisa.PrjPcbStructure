@@ -1,0 +1,7 @@
+Record=TopLevelDocument|FileName=Connectors.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Current Sensing.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Drogue Pyro.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Main Pyro.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Power Management.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Connectors.SchDoc|FileName=Sensing.SchDoc|SheetNumber=6

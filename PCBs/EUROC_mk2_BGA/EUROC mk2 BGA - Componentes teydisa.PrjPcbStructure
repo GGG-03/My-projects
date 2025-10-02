@@ -1,0 +1,4 @@
+Record=TopLevelDocument|FileName=CPU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=Modulos.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=PMU.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=CPU.SchDoc|FileName=RF.SchDoc|SheetNumber=3

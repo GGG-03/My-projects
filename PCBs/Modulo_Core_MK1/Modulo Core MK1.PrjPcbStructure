@@ -1,0 +1,7 @@
+Record=TopLevelDocument|FileName=Beacons.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=Beacons.SchDoc|FileName=Comms.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=Beacons.SchDoc|FileName=Connectors.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Beacons.SchDoc|FileName=MCU.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Beacons.SchDoc|FileName=MCU_PWR.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Beacons.SchDoc|FileName=Sensing.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Beacons.SchDoc|FileName=Storage.SchDoc|SheetNumber=6

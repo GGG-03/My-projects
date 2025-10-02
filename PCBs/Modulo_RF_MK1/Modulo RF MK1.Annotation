@@ -1,0 +1,14 @@
+[DesignatorManager]
+LogicalDesignator0=D10
+LogicalPartID0=1
+DocumentName0=SX1262.SchDoc
+ChannelName0=SX1262
+UniqueID0=\PQOJLFOA
+PhysicalDesignator0=D10
+PhysicalDesignatorLocked0=0
+
+[SheetNumberManager]
+SheetNumberOrder=Display Order
+SheetNumberMethod=Increasing
+
+
