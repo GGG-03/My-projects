@@ -1,1 +1,1 @@
-These are some of the boards that I have designed in LEEM UPM, the rocketry association. I cannot give more details, but I'm happy to share the work.
+These are some of the boards that I have designed in LEEM UPM, the rocketry association. I cannot give more details, but I'm happy to share the work. There are some files, but for a quick look, you can just take a peak in images
