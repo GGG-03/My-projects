@@ -1,0 +1,1 @@
+Developed an application at LEEM UPM to interface with data acquisition systems and various boards. Written in C++ using Qt, the app facilitates hardware interaction and data handling. The project is ongoing and not yet fully complete.
