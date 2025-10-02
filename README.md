@@ -1,0 +1,1 @@
+Welcome to my repository showcasing projects I developed at LEEM UPM as the Electronics Team Leader. Some projects are works in progress or partially restricted due to privacy, but I’m happy to answer any questions. Feel free to reach out at garcigongonzalez@gmail.com
